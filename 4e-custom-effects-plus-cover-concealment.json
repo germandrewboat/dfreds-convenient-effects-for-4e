@@ -1,0 +1,1264 @@
+{
+  "name": "Custom Convenient Effects",
+  "img": "modules/dfreds-convenient-effects/images/magic-palm.svg",
+  "type": "consumable",
+  "system": {
+    "description": {
+      "value": "",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "quantity": 1,
+    "weight": 0,
+    "price": 0,
+    "attuned": false,
+    "equipped": false,
+    "rarity": "",
+    "identified": true,
+    "activation": {
+      "type": "",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": "",
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "charges",
+      "autoDestroy": false
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "macro": {
+      "type": "script",
+      "scope": "global",
+      "launchOrder": "off",
+      "command": "",
+      "author": ""
+    },
+    "attack": {
+      "shareAttackRoll": false,
+      "isAttack": false,
+      "ability": "",
+      "abilityBonus": 0,
+      "def": "ac",
+      "defBonus": 0,
+      "formula": "",
+      "damageType": {},
+      "effectType": {}
+    },
+    "hit": {
+      "shareDamageRoll": false,
+      "isDamage": false,
+      "isHealing": false,
+      "healSurge": "",
+      "baseQuantity": "1",
+      "baseDiceType": "Base Weapon Damage",
+      "detail": "",
+      "formula": "",
+      "critFormula": "",
+      "healFormula": ""
+    },
+    "miss": {
+      "detail": "",
+      "formula": ""
+    },
+    "effect": {
+      "detail": ""
+    },
+    "damage": {
+      "parts": []
+    },
+    "damageCrit": {
+      "parts": []
+    },
+    "damageImp": {
+      "parts": []
+    },
+    "damageCritImp": {
+      "parts": []
+    },
+    "level": null,
+    "consumableType": "potion",
+    "autoGenChatPowerCard": false,
+    "useType": "item",
+    "actionType": "none",
+    "rangeType": "",
+    "formula": "",
+    "postEffect": false,
+    "effectHTML": false
+  },
+  "effects": [
+    {
+      "label": "Blinded",
+      "icon": "icons/creatures/eyes/humanoid-single-blind.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You grant combat advantage.  ✦ You can’t see any target (your targets have total concealment).  ✦ You take a –10 penalty to Perception checks.  ✦ You can’t flank an enemy.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "Zzpftvrp1dEXc7jW",
+      "changes": [
+        {
+          "key": "system.skills.prc.base",
+          "mode": 2,
+          "value": "-10",
+          "priority": null
+        },
+        {
+          "key": "system.modifiers.attack.value",
+          "mode": 2,
+          "value": "-5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Dazed",
+      "icon": "icons/magic/control/silhouette-aura-energy.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You grant combat advantage.  ✦ You can take either a standard action, a move action, or a minor action on your turn (you can also take free actions). You can’t take immediate actions or opportunity actions.  ✦ You can’t flank an enemy.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "i6zd1pXY0kQdIHr1",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Defeaned",
+      "icon": "icons/commodities/biological/ear-grey-brown.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You can’t hear anything.  ✦ You take a –10 penalty to Perception checks.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "cnrZEIR0R7BcpSb4",
+      "changes": [
+        {
+          "key": "system.skills.prc.base",
+          "mode": 2,
+          "value": "-10",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Dominated",
+      "icon": "icons/magic/control/voodoo-doll-pain-damage-yellow.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You can’t take actions. Instead, the dominator chooses a single action for you to take on your turn: a standard, a move, a minor, or a free action. The only powers and other game features that the dominator can make you use are ones that can be used at will, such as at-will powers. For example, anything that is limited to being used only once per encounter or once per day does not qualify.  ✦ You grant combat advantage.  ✦ You can’t flank.  In spite of this condition, the creature’s allies remain its allies, and its enemies remain its enemies. (Thus, if the dominator makes the creature attack one of its allies, it does not attack an ally of the dominator.) If the dominator tries to force the creature to throw itself into a pit or move into some other form of hindering terrain, the creature gets a saving throw to avoid entering the terrain.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "lTCZOxNyBwo2G3IK",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Dying",
+      "icon": "icons/magic/death/grave-tombstone-glow-teal.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ Dying: When your hit points drop to 0 or fewer, you fall unconscious and are dying. Any additional damage you take continues to reduce your current hit point total until your character dies.  ✦ Death Saving Throw: When you are dying, you need to make a saving throw at the end of your turn each round. The result of your saving throw determines how close you are to death. ✦ Death: When you take damage that reduces your current hit points to your bloodied value expressed as a negative number, your character dies.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "6VKDO8fOSCW4xDYR",
+      "changes": [
+        {
+          "key": "system.attributes.hp.value",
+          "mode": 5,
+          "value": "0",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Combat Advantage",
+      "icon": "icons/environment/people/infantry-army.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "You gain a +2 bonus to your attack roll when you have combat advantage against the target of your attack. Able to See Target: You must be able to see a target to gain combat advantage against it.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "zYs2L1XHJzqU6FXQ",
+      "changes": [
+        {
+          "key": "system.modifiers.attack.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Helpless",
+      "icon": "icons/magic/control/silhouette-fall-slip-prone.webp",
+      "tint": null,
+      "duration": {
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startTime": null,
+        "combat": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You grant combat advantage.  ✦ You can be the target of a coup de grace.  Note: Usually you’re helpless because you’re unconscious.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "transfer": false,
+      "_id": "mUIdhU99LYFrHbM8",
+      "disabled": false
+    },
+    {
+      "label": "Immobilized",
+      "icon": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You can’t move from your space, although you can teleport and can be forced to move by a pull, a push, or a slide.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "R5Nc6Sp0KzrIs7iE",
+      "changes": [
+        {
+          "key": "system.movement.base.base",
+          "mode": 1,
+          "value": "*0.5",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Insubstantial",
+      "icon": "icons/magic/defensive/barrier-shield-dome-deflect-blue.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "Apply half damage from chat card! Some creatures, such as wailing ghosts, are insubstantial, and some powers can make you insubstantial. When you are insubstantial, you take half damage from any attack that deals damage to you. Ongoing damage is also halved.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "vF4I8rolaUxrspNn",
+      "changes": [],
+      "tint": null
+    },
+    {
+      "label": "Invisible",
+      "icon": "icons/magic/air/fog-gas-smoke-blue-gray.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You can’t be seen by normal forms of vision.  ✦ You have combat advantage against any enemy that can’t see you.  ✦ You don’t provoke opportunity attacks from enemies that can’t see you.  ✦ You are totally concealed from other creatures.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "HX0dTArhBzgQAktU",
+      "changes": [
+        {
+          "key": "system.modifiers.attack.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Marked",
+      "icon": "icons/magic/control/hypnosis-mesmerism-eye.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You take a –2 penalty to attack rolls for any attack that doesn’t target the creature that marked you.  ✦ You can be subjected to only one mark at a time, and a new mark supersedes an old one.  ✦ A mark ends immediately when its creator dies or falls unconscious.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "TIKH517WpmYXYN0B",
+      "changes": [
+        {
+          "key": "system.modifiers.attack.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Petrified",
+      "icon": "icons/magic/earth/strike-body-stone-crumble.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You are unconscious.  ✦ You have resist 20 to all damage.  ✦ You don’t age.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "CM4h26RHDx4ROaY3",
+      "changes": [
+        {
+          "key": "system.resistances.damage.value",
+          "mode": 2,
+          "value": "20",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Restrained",
+      "icon": "icons/magic/control/debuff-chains-shackle-movement-red.webp",
+      "tint": null,
+      "duration": {
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startTime": null,
+        "combat": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You can’t move, unless you teleport. You can’t even be pulled, pushed, or slid.  ✦ You take a –2 penalty to attack rolls.  ✦ You grant combat advantage.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "changes": [
+        {
+          "key": "system.modifiers.attack.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "transfer": false,
+      "_id": "TQOOnnEfvkslGXnk",
+      "disabled": false
+    },
+    {
+      "label": "Prone",
+      "icon": "icons/svg/falling.svg",
+      "tint": null,
+      "duration": {
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startTime": null,
+        "combat": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You grant combat advantage to enemies making melee attacks against you.  ✦ You get a +2 bonus to all defenses against ranged attacks from nonadjacent enemies.  ✦ You’re lying on the ground. (If you’re flying, you safely descend a distance equal to your fly speed. If you don’t reach the ground, you fall.)  ✦ You take a –2 penalty to attack rolls.  ✦ You can drop prone as a minor action.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.modifiers.attack.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "transfer": false,
+      "_id": "AhgyTJSigZMoq9Be",
+      "disabled": false
+    },
+    {
+      "label": "Slowed",
+      "icon": "icons/magic/movement/chevrons-down-yellow.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ Your speed becomes 2. This speed applies to all your movement modes, but it does not apply to teleportation or to a pull, a push, or a slide. You can’t increase your speed above 2, and your speed doesn’t increase if it was lower than 2. If you’re slowed while moving, stop moving if you have already moved 2 or more squares.  ✦ You cannot benefit from bonuses to speed, although you can use powers and take actions, such as the run action, that allow you to move farther than your speed.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "N530juviwdv4fudc",
+      "changes": [
+        {
+          "key": "system.movement.base.base",
+          "mode": 5,
+          "value": "2",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Stunned",
+      "icon": "icons/svg/daze.svg",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You grant combat advantage.  ✦ You can’t take actions.  ✦ You can’t flank an enemy.  ✦ You fall if you are flying, unless you can hover.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "mdhnGj1T0eo5ppis",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Surprised",
+      "icon": "icons/svg/terror.svg",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You grant combat advantage.  ✦ You can’t take actions.  ✦ You can’t flank an enemy.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "1WdYgww3ueuWcPJr",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "-2",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Unconscious",
+      "icon": "icons/magic/control/sleep-bubble-purple.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ You’re helpless.  ✦ You take a –5 penalty to all defenses.  ✦ You can’t take actions.  ✦ You fall prone, if possible.  ✦ You can’t flank an enemy.  ✦ You are unaware of your surroundings.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "cPV5Yeffx6mDSWNC",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "-5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "-5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "-5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "-5",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Weakened",
+      "icon": "icons/magic/control/buff-strength-muscle-damage-red.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "Apply half-damage from chat card. ✦ Your attacks deal half damage. However, two kinds of damage that you deal are not affected: ongoing damage and damage that isn’t generated by an attack roll.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "TXBeWRWK2r8xARCr",
+      "changes": [],
+      "tint": null
+    },
+    {
+      "label": "Partial Concealment",
+      "icon": "icons/environment/settlement/fence-wooden-picket.webp",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ Concealment (–2 Penalty to Attack Rolls): The target is in a lightly obscured square or in a heavily obscured square but adjacent to you.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "1cIfn9ee8weLjCqk",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        }
+      ],
+      "tint": null
+    },
+    {
+      "label": "Total Concealment",
+      "icon": "icons/environment/settlement/fence-stone-brick.webp",
+      "tint": null,
+      "duration": {
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startTime": null,
+        "combat": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "✦ Total Concealment (–5 Penalty to Attack Rolls): You can’t see the target. The target is invisible, in a totally obscured square, in a heavily obscured square and not adjacent to you, or line of sight to the target passes through 5 or more lightly obscured squares.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        }
+      ],
+      "transfer": false,
+      "_id": "fiR862bz1j2cQSX3",
+      "disabled": false
+    },
+    {
+      "label": "Cover",
+      "icon": "icons/svg/ruins.svg",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "(–2 Penalty to Attack Rolls): The target is around a corner or protected by terrain. For example, the target might be in the same square as a small tree, obscured by a small pillar or a large piece of furniture, or behind a low wall.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "nIzNhhlCNA8lVkX8",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "+2",
+          "priority": null
+        }
+      ],
+      "tint": "#ad611a"
+    },
+    {
+      "label": "Superior Cover",
+      "icon": "icons/svg/tower.svg",
+      "origin": "Item.gsfKVw8x31Bpok36",
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "disabled": false,
+      "flags": {
+        "isCustomConvenient": true,
+        "convenientDescription": "(–5 Penalty to Attack Rolls): The target is protected by a significant terrain advantage, such as when fighting from behind a window, a portcullis, a grate, or an arrow slit.",
+        "dnd4e": {
+          "effectData": {
+            "equippedRec": false,
+            "durationType": "",
+            "durationTurnInit": null,
+            "startTurnInit": null
+          }
+        }
+      },
+      "transfer": false,
+      "_id": "4gDRHhtDh1kr3bqe",
+      "changes": [
+        {
+          "key": "system.defences.ac.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.fort.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.ref.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        },
+        {
+          "key": "system.defences.wil.class",
+          "mode": 2,
+          "value": "+5",
+          "priority": null
+        }
+      ],
+      "tint": "#811818"
+    }
+  ],
+  "flags": {
+    "exportSource": {
+      "world": "4th-edition-game",
+      "system": "dnd4e",
+      "coreVersion": "10.291",
+      "systemVersion": "0.3.18"
+    }
+  },
+  "_stats": {
+    "systemId": "dnd4e",
+    "systemVersion": "0.3.18",
+    "coreVersion": "10.291",
+    "createdTime": 1673997113443,
+    "modifiedTime": 1674028593666,
+    "lastModifiedBy": "a9CMuYHytLkXCoxd"
+  }
+}
